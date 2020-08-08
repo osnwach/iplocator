@@ -1,20 +1,20 @@
-Yii 2 Advanced Application Template
+iplocator App
 ===================================
 
-Yii 2 Advanced Application Template is a skeleton Yii 2 application best for
-developing complex Web applications with multiple tiers.
+iplocator is an application you can use to find the location of any given internet ip address. just enter any internet ip address in the search bar, the ip locator app will get the actual location of that ip address for you !
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+The iplocator app will work for both an internet ipv4 or ipv6 address. it gives you details of the ip address like country, city, date and time etc.
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+iplocator app was built with PHP Yii2 framework, and will work for you both offline (on your localhost) or online when hosted on an internet server ! 
+
+Simply download the app and enjoy.
 
 
 DIRECTORY STRUCTURE
 -------------------
 
 ```
+assets					 contains web assets and resources
 common
     config/              contains shared configurations
     mail/                contains view files for e-mails
@@ -25,14 +25,8 @@ console
     migrations/          contains database migrations
     models/              contains console-specific model classes
     runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
+css                 	 contains css files and resources
+environments/            contains environment-based overrides
 frontend
     assets/              contains application assets such as JavaScript and CSS
     config/              contains frontend configurations
@@ -42,56 +36,40 @@ frontend
     views/               contains view files for the Web application
     web/                 contains the entry script and Web resources
     widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
 tests                    contains various tests for the advanced application
     codeception/         contains tests developed with Codeception PHP Testing Framework
+vendor					 	
 ```
 
 
 REQUIREMENTS
 ------------
 
-The minimum requirement by this application template that your Web server supports PHP 5.4.0.
+The requirement for this application to run is that your Web server supports PHP 5.4.0 to PHP 7.0
 
 
 INSTALLATION
 ------------
 
-### Install from an Archive File
+### Install from a Zip File download
 
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `advanced` that is directly under the Web root.
-
-Then follow the instructions given in "GETTING STARTED".
-
-
-### Install via Composer
-
-If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
-
-You can then install the application using the following command:
+1. Download a Zip file of the iplocator app
+2. Create a folder 'iplocator' on your localhost (xampp/htdocs)
+3. Extract the Zip file contents to this folder created above. 
+4. Create a database and import the file: iplocatordb.sql 
+5. Adjust the `components['db']` configuration in `common/config/main-local.php` with your database name, username and password. 
 
 ~~~
-php composer.phar global require "fxp/composer-asset-plugin:1.0.0"
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-advanced advanced
-~~~
 
 
-GETTING STARTED
----------------
+RUNNING THE iplocator App
+-------------------------
 
-After you install the application, you have to conduct the following steps to initialize
-the installed application. You only need to do these once for all.
+After installation and setup, you will need to run the app !
 
-1. Run command `init` to initialize the application with a specific environment.
-2. Create a new database and adjust the `components['db']` configuration in `common/config/main-local.php` accordingly.
-3. Apply migrations with console command `yii migrate`. This will create tables needed for the application to work.
-4. Set document roots of your Web server:
+To start using the app simply open your browser. 
+On your browser address bar, just type: localhost/iplocator
 
-- for frontend `/path/to/yii-application/frontend/web/` and using the URL `http://frontend/`
-- for backend `/path/to/yii-application/backend/web/` and using the URL `http://backend/`
+Enter any ip address in the search bar, then click 'Locate ip'
 
-To login into the application, you need to first sign up, with any of your email address, username and password.
-Then, you can login into the application with same email address and password at any time.
+Enjoy !
