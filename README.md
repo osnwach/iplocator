@@ -1,7 +1,7 @@
 iplocator App
 ===================================
 
-iplocator is an application you can use to find the location of any given internet ip address. just enter any internet ip address in the search bar, the ip locator app will get the actual location of that ip address for you !
+iplocator is an application you can use to find the location of any given internet ip address. Just enter any internet ip address in the search bar, the ip locator app will get the actual location of that ip address for you !
 
 The iplocator app will work for both an internet ipv4 or ipv6 address. it gives you details of the ip address like country, city, date and time etc.
 
@@ -45,7 +45,7 @@ vendor
 REQUIREMENTS
 ------------
 
-The requirement for this application to run is that your Web server supports PHP 5.4.0 to PHP 7.0
+The requirement for this application to run is that your Web server supports PHP 5.4 to PHP 7.0
 
 
 INSTALLATION
